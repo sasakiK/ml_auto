@@ -1,0 +1,38 @@
+---
+title: "Modeling with `r group_name` dataset"
+output: html_document
+date: "`r current_time`"
+---
+
+```{r ex_setup, include=FALSE}
+knitr::opts_chunk$set(
+  message = FALSE,
+  digits = 3,
+  collapse = TRUE,
+  comment = "|  ",
+  warning=FALSE
+  )
+options(digits = 3, warn=-1)
+```
+
+## Prepare
+
+- library読み込み
+```{r prepare}
+suppressWarnings(library(bnlearn))
+```
+
+- データ読み込み
+```{r load data}
+col_names <- c("preg","plas","pres","skin","test","mass","pedi","age","class")
+
+df <- readr::read_csv("data/pima-indians-diabetes.csv", 
+                      col_names = col_names,
+                      skip = 1)
+```
+
+## R Markdown
+
+```{r check}
+print(group_name)
+```
