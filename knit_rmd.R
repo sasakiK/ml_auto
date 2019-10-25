@@ -12,4 +12,6 @@ output_path <- paste("output/experiment_",current_time,"/",sep="")
 
 rmarkdown::render(input = "modeling.Rmd",
                   output_dir = output_path,
-                  output_file = paste("modeling_", group_name, ".html", sep = ""))
+                  output_file = paste("modeling_", 
+                                      group_name, ".html", sep = ""))
+
