@@ -14,8 +14,8 @@ password <- commandArgs(trailingOnly = TRUE)[2]
 email <- envelope() %>%
   from("k.coobb@gmail.com") %>%
   to("k.coobb@gmail.com") %>%
-  subject("Your Experiment is finished!") %>% 
-  body("Look at the attached file!") %>% 
+  subject("実験は無事に終わりました!") %>% 
+  body("結果を見てみましょう!") %>% 
   attachment(file_name)
 
 smtp <- server(host = "smtp.gmail.com",
