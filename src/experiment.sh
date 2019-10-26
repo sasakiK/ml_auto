@@ -11,7 +11,6 @@ fi
 # output先のフォルダを作成
 mkdir output/experiment_${current_time}
 
-
 # グループごとに実行 --
 for group_name in group1 group2 group3 group4 group5 group6
 do 
