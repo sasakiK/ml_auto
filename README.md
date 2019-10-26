@@ -34,7 +34,7 @@
   - send_to_home.R
     - 分析結果をgzipしたものを環境変数に登録されているアドレスに送信する
     - Google acountのSecurityがちょっと不安
-    - 実行する前に↓が必要
+    - 実行する前に`export ADDRESS`と`export PASSWORD`が必要(need review)
       - `export ADDRESS="<your-gmail-address>"`
       - `export PASSWORD="<your-gmail-password>"`
   
